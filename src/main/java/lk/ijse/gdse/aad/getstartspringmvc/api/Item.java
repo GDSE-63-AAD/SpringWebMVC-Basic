@@ -14,7 +14,8 @@ public class Item {
         return "Saved the item as: "+token;
     }
     @PostMapping(value = "/{code}",headers = "X-token")
-    public String setItemwithCustomTokenandValue(@RequestHeader("X-token") String token,@PathVariable String code){
+    public String setItemwithCustomTokenandValue(@RequestHeader("X-token")
+                                                     String token,@PathVariable String code){
         return "Saved the item as: "+token +"and "+code;
     }
 }
