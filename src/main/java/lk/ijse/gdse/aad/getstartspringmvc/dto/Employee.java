@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 public class Employee implements Serializable {
-    List<String>id;
-    List<String>name;
+   private List<String>id;
+   private List<String>name;
 
 }

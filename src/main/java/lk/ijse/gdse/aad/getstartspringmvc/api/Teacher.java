@@ -24,10 +24,8 @@ public class Teacher {
         System.out.println(id);
         System.out.println(name);
         System.out.println(city);
-
-        byte [] decoded = Base64.getDecoder().decode(profile);
-        String profileStr = new String(decoded);
-        System.out.println(profileStr);
+        String profileImg64= Base64.getEncoder().encodeToString(profile);
+        System.out.println(profileImg64);
         return "Saved";
     }
 }
